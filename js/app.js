@@ -3,13 +3,25 @@
 do {
   var ageGuess1 = prompt( 'Do you think I am older than 20? Please answer \'yes\' or \'no\'.' ).toLowerCase();
   if ( ageGuess1 === 'yes' ) {
-    alert( 'Correct! Let\'s keep going.' );
+    alert( 'Good start! Let\'s keep going.' );
     break;
   } else if ( ageGuess1 === 'no' ) {
     alert( 'Ah, nope! Let\'s start over, shall we?' );
-    var ageCorrect = false;
+    var ageCorrect1 = false;
   } else {
     alert( 'Please answer \'yes\' or \'no\'.' );
   }
-} while ( ageCorrect === false );
+} while ( ageCorrect1 === false );
 
+do {
+  var ageGuess2 = prompt( 'Do you think I am older than 25? Please answer \'yes\' or \'no\'.' ).toLowerCase();
+  if ( ageGuess2 === 'yes' ) {
+    alert( 'Nice! Doing great. Keep going, brainiac.' );
+    break;
+  } else if ( ageGuess2 === 'no' ) {
+    alert( 'Ah, unlucky. Back it up, brainiac.' );
+    var ageCorrect2 = false;
+  } else { 
+    alert( 'Please answer \'yes\' or \'no\'.' );
+  }
+} while ( ageCorrect2 === false );
