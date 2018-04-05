@@ -6,7 +6,6 @@ function askName(){
   console.log( 'The user\'s name is ' + userName + '.' );
   alert( 'Nice to meet you, ' + userName + '! Think you can guess how old I am? Most people can\'t.' );
 }
-askName();
 
 function userGuessOne(){
   do {
@@ -26,7 +25,6 @@ function userGuessOne(){
     }
   } while ( ageCorrect1 === false );
 }
-userGuessOne();
 
 function userGuessTwo(){
   do {
@@ -46,7 +44,6 @@ function userGuessTwo(){
     }
   } while ( ageCorrect2 === false );
 }
-userGuessTwo();
 
 function userGuessThree() {
   do {
@@ -66,7 +63,6 @@ function userGuessThree() {
     }
   } while ( ageCorrect3 === false );
 }
-userGuessThree();
 
 function userGuessFour(){
   do {
@@ -86,7 +82,6 @@ function userGuessFour(){
     }
   } while ( ageCorrect4 === false );
 }
-userGuessFour();
 
 function userGuessFive() {
   var scoobyGuess = prompt( 'Do you think I enjoy the show \'Scooby-Do?\'' ).toLowerCase();
@@ -101,4 +96,13 @@ function userGuessFive() {
     console.log( 'The user\'s response was invalid.' );
   }
 }
-userGuessFive();
+
+function guessAgeGame(){
+  askName();
+  userGuessOne();
+  userGuessTwo();
+  userGuessThree();
+  userGuessFour();
+  userGuessFive();
+}
+guessAgeGame();
