@@ -79,9 +79,7 @@ if ( scoobyGuess === 'no' ) {
 } else if ( scoobyGuess === 'yes' ) {
   alert( 'No. The creators of that show must have been collectively dropped on their heads.' );
   console.log( 'The user incorrectly responded ' + scoobyGuess + '.' );
-  var scoobyCorrect = false;
 } else {
   alert( 'Please answer \'yes\' or \'no\'.' );
   console.log( 'The user\'s response was invalid.' );
-  scoobyCorrect = false;
 }
