@@ -8,39 +8,45 @@ function askName(){
 }
 askName();
 
-// do {
-//   var ageGuess1 = prompt( 'Do you think I am older than 20?' ).toLowerCase();
-//   if ( ageGuess1 === 'yes' ) {
-//     alert( 'Good start! Let\'s keep going.' );
-//     console.log( 'The user correctly responded ' + ageGuess1 + '.' );
-//     break;
-//   } else if ( ageGuess1 === 'no' ) {
-//     alert( 'Wrong. Let\'s start over, shall we?' );
-//     console.log( 'The user incorrectly responded ' + ageGuess1 + '.' );
-//     var ageCorrect1 = false;
-//   } else {
-//     alert( 'Please answer \'yes\' or \'no\'.' );
-//     console.log( 'The user\'s response was invalid.' );
-//     ageCorrect1 = false;
-//   }
-// } while ( ageCorrect1 === false );
+function userGuessOne(){
+  do {
+    var ageGuess1 = prompt( 'Do you think I am older than 20?' ).toLowerCase();
+    if ( ageGuess1 === 'yes' ) {
+      alert( 'Good start! Let\'s keep going.' );
+      console.log( 'The user correctly responded ' + ageGuess1 + '.' );
+      break;
+    } else if ( ageGuess1 === 'no' ) {
+      alert( 'Wrong. Let\'s start over, shall we?' );
+      console.log( 'The user incorrectly responded ' + ageGuess1 + '.' );
+      var ageCorrect1 = false;
+    } else {
+      alert( 'Please answer \'yes\' or \'no\'.' );
+      console.log( 'The user\'s response was invalid.' );
+      ageCorrect1 = false;
+    }
+  } while ( ageCorrect1 === false );
+}
+userGuessOne();
 
-// do {
-//   var ageGuess2 = prompt( 'Do you think I am older than 25?' ).toLowerCase();
-//   if ( ageGuess2 === 'yes' ) {
-//     alert( 'Impressive. Keep going, brainiac!' );
-//     console.log( 'The user correctly responded ' + ageGuess2 + '.' );
-//     break;
-//   } else if ( ageGuess2 === 'no' ) {
-//     alert( 'Ah, unlucky. Back it up, brainiac.' );
-//     console.log( 'The user incorrectly responded ' + ageGuess2 + '.' );
-//     var ageCorrect2 = false;
-//   } else {
-//     alert( 'Please answer \'yes\' or \'no\'.' );
-//     console.log( 'The user\'s response was invalid.' );
-//     ageCorrect2 = false;
-//   }
-// } while ( ageCorrect2 === false );
+function userGuessTwo(){
+  do {
+    var ageGuess2 = prompt( 'Do you think I am older than 25?' ).toLowerCase();
+    if ( ageGuess2 === 'yes' ) {
+      alert( 'Impressive. Keep going, brainiac!' );
+      console.log( 'The user correctly responded ' + ageGuess2 + '.' );
+      break;
+    } else if ( ageGuess2 === 'no' ) {
+      alert( 'Ah, unlucky. Back it up, brainiac.' );
+      console.log( 'The user incorrectly responded ' + ageGuess2 + '.' );
+      var ageCorrect2 = false;
+    } else {
+      alert( 'Please answer \'yes\' or \'no\'.' );
+      console.log( 'The user\'s response was invalid.' );
+      ageCorrect2 = false;
+    }
+  } while ( ageCorrect2 === false );
+}
+userGuessTwo();
 
 // do {
 //   var ageGuess3 = prompt( 'Do you think I am older than 30?' ).toLowerCase();
