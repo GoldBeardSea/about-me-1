@@ -106,3 +106,19 @@ function guessAgeGame(){
   userGuessFive();
 }
 guessAgeGame();
+
+var totalGuesses = 4;
+var myWeight = 169;
+
+function userGuessWeight() {
+  while (totalGuesses > 0)
+    var userAnswer =prompt( 'Let\'s try a new game. Can you guess my weight?');
+  totalGuesses--;
+  if ( userAnswer > myWeight) {
+    alert ('Too high');
+  }
+
+
+
+
+}
