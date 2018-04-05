@@ -48,48 +48,57 @@ function userGuessTwo(){
 }
 userGuessTwo();
 
-// do {
-//   var ageGuess3 = prompt( 'Do you think I am older than 30?' ).toLowerCase();
-//   if ( ageGuess3 === 'yes' ) {
-//     alert( 'Yes! Hey, you\'re getting the hang of this.' );
-//     console.log( 'The user correctly responded ' + ageGuess3 + '.' );
-//     break;
-//   } else if ( ageGuess3 === 'no' ) {
-//     alert( 'Oof. Try again.' );
-//     console.log( 'The user incorrectly responded ' + ageGuess3 + '.' );
-//     var ageCorrect3 = false;
-//   } else {
-//     alert( 'Please answer \'yes\' or \'no\'.' );
-//     console.log( 'The user\'s response was invalid.' );
-//     ageCorrect3 = false;
-//   }
-// } while ( ageCorrect3 === false );
+function userGuessThree() {
+  do {
+    var ageGuess3 = prompt( 'Do you think I am older than 30?' ).toLowerCase();
+    if ( ageGuess3 === 'yes' ) {
+      alert( 'Yes! Hey, you\'re getting the hang of this.' );
+      console.log( 'The user correctly responded ' + ageGuess3 + '.' );
+      break;
+    } else if ( ageGuess3 === 'no' ) {
+      alert( 'Oof. Try again.' );
+      console.log( 'The user incorrectly responded ' + ageGuess3 + '.' );
+      var ageCorrect3 = false;
+    } else {
+      alert( 'Please answer \'yes\' or \'no\'.' );
+      console.log( 'The user\'s response was invalid.' );
+      ageCorrect3 = false;
+    }
+  } while ( ageCorrect3 === false );
+}
+userGuessThree();
 
-// do {
-//   var ageGuess4 = prompt( 'Do you think I am older than 35?' ).toLowerCase();
-//   if ( ageGuess4 === 'no' ) {
-//     alert( 'Well played. I am technically 35 until April 18.' );
-//     console.log( 'The user correctly responded ' + ageGuess4 + '.' );
-//     break;
-//   } else if ( ageGuess4 === 'yes' ) {
-//     alert( 'Ah, it was too good to last, wasn\'t it? Try again.' );
-//     console.log( 'The user incorrectly responded ' + ageGuess4 + '.' );
-//     var ageCorrect4 = false;
-//   } else {
-//     alert( 'Please answer \'yes\' or \'no\'.' );
-//     console.log( 'The user\'s response was invalid.' );
-//     ageCorrect4 = false;
-//   }
-// } while ( ageCorrect4 === false );
+function userGuessFour(){
+  do {
+    var ageGuess4 = prompt( 'Do you think I am older than 35?' ).toLowerCase();
+    if ( ageGuess4 === 'no' ) {
+      alert( 'Well played. I am technically 35 until April 18.' );
+      console.log( 'The user correctly responded ' + ageGuess4 + '.' );
+      break;
+    } else if ( ageGuess4 === 'yes' ) {
+      alert( 'Ah, it was too good to last, wasn\'t it? Try again.' );
+      console.log( 'The user incorrectly responded ' + ageGuess4 + '.' );
+      var ageCorrect4 = false;
+    } else {
+      alert( 'Please answer \'yes\' or \'no\'.' );
+      console.log( 'The user\'s response was invalid.' );
+      ageCorrect4 = false;
+    }
+  } while ( ageCorrect4 === false );
+}
+userGuessFour();
 
-// var scoobyGuess = prompt( 'Do you think I enjoy the show \'Scooby-Do?\'' ).toLowerCase();
-// if ( scoobyGuess === 'no' ) {
-//   alert( 'Correct! If that sad excuse for some nonsense never airs again, it will be too soon.' );
-//   console.log( 'The user correctly responded ' + scoobyGuess + '.' );
-// } else if ( scoobyGuess === 'yes' ) {
-//   alert( 'No. The creators of that show must have been collectively dropped on their heads.' );
-//   console.log( 'The user incorrectly responded ' + scoobyGuess + '.' );
-// } else {
-//   alert( 'Please answer \'yes\' or \'no\'.' );
-//   console.log( 'The user\'s response was invalid.' );
-// }
+function userGuessFive() {
+  var scoobyGuess = prompt( 'Do you think I enjoy the show \'Scooby-Do?\'' ).toLowerCase();
+  if ( scoobyGuess === 'no' ) {
+    alert( 'Correct! If that sad excuse for some nonsense never airs again, it will be too soon.' );
+    console.log( 'The user correctly responded ' + scoobyGuess + '.' );
+  } else if ( scoobyGuess === 'yes' ) {
+    alert( 'No. The creators of that show must have been collectively dropped on their heads.' );
+    console.log( 'The user incorrectly responded ' + scoobyGuess + '.' );
+  } else {
+    alert( 'Please answer \'yes\' or \'no\'.' );
+    console.log( 'The user\'s response was invalid.' );
+  }
+}
+userGuessFive();
