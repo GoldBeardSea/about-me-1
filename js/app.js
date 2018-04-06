@@ -109,16 +109,23 @@ guessAgeGame();
 
 var totalGuesses = 4;
 var myWeight = 169;
+var userAnswer;
 
-function userGuessWeight() {
-  while (totalGuesses > 0)
-    var userAnswer =prompt( 'Let\'s try a new game. Can you guess my weight?');
-  totalGuesses--;
-  if ( userAnswer > myWeight) {
-    alert ('Too high');
+function guessWeight() {
+  while ( totalGuesses > 0 ) {
+    userAnswer = parseInt( prompt( 'Let\'s try a new game. Can you guess my weight?' ));
+    console.log( 'User entered ' + userAnswer + '.' );
+    totalGuesses--;
+    if ( userAnswer > myWeight ) {
+      alert( 'Too high.' );
+    }
+    if ( userAnswer < myWeight ) {
+      alert( 'Too low.' );
+    }
+    if ( userAnswer === myWeight ) {
+      alert( 'Nice! Got it.' );
+      break;
+    }
   }
-
-
-
-
 }
+guessWeight();
